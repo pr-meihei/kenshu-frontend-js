@@ -6,21 +6,18 @@
   // "parserOptions": {
   //     "parser": "babel-eslint"
   // },
-  "plugins": [
-    // "vue"
-    "prettier"
-  ],
+  //   "plugins": [
+  //     // "vue"
+  //   ],
   "extends": [
-    "standard"
     // "plugin:vue/strongly-recommended"
+    "standard",
+    "prettier"
   ],
   "rules": {
     // "no-console": 1,
     // "prefer-template": 2,
-    // "semi": [
-    //     "error",
-    //     "always"
-    // ],
+    // "semi": ["error", "always"],
     "prettier/prettier": [
       "error",
       {
