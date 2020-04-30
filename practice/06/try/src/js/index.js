@@ -8,20 +8,20 @@
   const genderTextElement = document.getElementById("gender-text");
   const textWrapperElement = document.getElementById("text-wrapper");
 
-  function escapeHtml(str) {
-    str = str.replace(/&/g, "&amp;");
-    str = str.replace(/</g, "&lt;");
-    str = str.replace(/>/g, "&gt;");
-    str = str.replace(/"/g, "&quot;");
-    str = str.replace(/'/g, "&#39;");
-    return str;
-  }
+  const escapeHtml = (str) => {
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  };
 
-  function onClick() {
+  const onClick = () => {
     nameTextElement.innerHTML = escapeHtml(nameElement.value);
     genderTextElement.innerHTML = formElement.gender.value;
     textWrapperElement.classList.add("is-active");
-  }
+  };
 
   buttonElement.addEventListener("click", onClick);
 })();

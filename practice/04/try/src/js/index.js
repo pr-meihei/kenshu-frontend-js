@@ -3,12 +3,12 @@
 
   const buttonElements = document.getElementsByClassName("button");
 
-  function onClick(elm) {
+  const onClick = (elm) => {
     const listElement = elm.nextElementSibling;
     return () => {
       listElement.classList.toggle("is-active");
     };
-  }
+  };
 
   for (let i = 0; i < buttonElements.length; i++) {
     let button = buttonElements[i];

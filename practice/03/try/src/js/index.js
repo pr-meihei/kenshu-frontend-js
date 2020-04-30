@@ -6,15 +6,15 @@
   const modalContentElement = document.getElementById("modal-content");
   const modalCloseElement = document.getElementById("modal-close");
 
-  function activateModal() {
+  const activateModal = () => {
     modalOverlayElement.classList.add("is-active");
     modalContentElement.classList.add("is-active");
-  }
+  };
 
-  function deactivateModal() {
+  const deactivateModal = () => {
     modalOverlayElement.classList.remove("is-active");
     modalContentElement.classList.remove("is-active");
-  }
+  };
 
   buttonElement.addEventListener("click", activateModal);
   modalOverlayElement.addEventListener("click", deactivateModal);
