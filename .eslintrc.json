@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": true
+  },
+  // "parser": "vue-eslint-parser",
+  // "parserOptions": {
+  //     "parser": "babel-eslint"
+  // },
+  //   "plugins": [
+  //     // "vue"
+  //   ],
+  "extends": [
+    // "plugin:vue/strongly-recommended"
+    "standard",
+    "prettier"
+  ],
+  "rules": {
+    // "no-console": 1,
+    // "prefer-template": 2,
+    // "semi": ["error", "always"],
+    "prettier/prettier": [
+      "error",
+      {
+        "no-console": 1,
+        "printWidth": 140,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": ["error", "always"],
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "arrowParens": "always"
+      }
+    ]
+  }
+}
